@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <div id="cameraView">
+        <video id="camera" autoplay playsinline></video>
+        <button id="capture" class="circle-btn"></button>
+    </div>
+
+    <div id="photoPreview" class="hidden">
+        <canvas id="photoCanvas"></canvas>
+        <div class="buttons">
+            <button id="retakePhoto" class="red-btn">❌</button>
+            <button id="approvePhoto" class="green-btn">✅</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

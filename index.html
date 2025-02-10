@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Booth</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- Home Screen -->
+    <div id="home">
+        <button id="takePhoto">📸 Take Photo</button>
+    </div>
+
+    <!-- Camera View -->
+    <div id="cameraView" class="hidden">
+        <video id="camera" autoplay playsinline></video>
+        <button id="capture" class="circle-btn"></button>
+    </div>
+
+    <!-- Photo Preview -->
+    <div id="preview" class="hidden">
+        <canvas id="photoCanvas"></canvas>
+        
+        <!-- Retake or Approve -->
+        <div class="buttons">
+            <button id="retakePhoto" class="red-btn">❌ Retake</button>
+            <button id="approvePhoto" class="green-btn">✔ Approve</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

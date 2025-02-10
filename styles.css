@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#takePhoto {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Camera & Photo */
+video, canvas {
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+    display: block;
+    object-fit: cover;
+}
+
+/* Capture Button */
+.circle-btn {
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Preview Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.red-btn {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+.green-btn {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Background Overlay (z-index 3) */
+#overlay {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    margin-top: 50px;
+}
